@@ -17,3 +17,4 @@ class Solution(object):
 sol = Solution()
 x = int(input("Enter an integer: "))
 print(sol.isPalindrome(x))
+

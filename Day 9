@@ -1,0 +1,21 @@
+PROBLEM STATEMENT:
+
+Given an integer, , print its first  multiples. Each multiple  (where ) should be printed on a new line in the form: n x i = result.
+
+OUTPUT:
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    p = 1
+    while p<11:
+        p_s = n*p
+        print(n,'x',p,"=",p_s)
+        p=p+1

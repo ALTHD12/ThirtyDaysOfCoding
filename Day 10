@@ -1,0 +1,24 @@
+PROBLEM STATEMENT
+
+Given n names and phone numbers, assemble a phone book that maps friends' names to their respective phone numbers. You will then be given an unknown number of names to query your phone book for. For each name queried, print the associated entry from your phone book on a new line in the form name=phone Number: if an entry for name is not found, print Not found instead.
+
+SOLUTION
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+p_b = {}
+for i in range(0, n):
+  entry = str(input()).split(" ")
+  name = entry[0]
+  num = entry[1]  
+  p_b[name] = num
+while True:
+    try:
+        name = input()
+    except:
+        break
+    if name in p_b:
+        num = p_b[name]
+        print(name + "=" + num)
+    else:
+        print("Not found")
